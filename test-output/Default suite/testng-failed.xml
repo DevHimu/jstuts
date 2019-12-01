@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tuts.webTableTest.TestingOFSameXpath">
+      <class name="DataDrivenFrameWorktest.DataDriverScript">
         <methods>
-          <include name="webTableTesting"/>
-          <include name="browserTrunket"/>
+          <include name="tearDown"/>
+          <include name="testLogin" invocation-numbers="2 3"/>
         </methods>
-      </class> <!-- com.tuts.webTableTest.TestingOFSameXpath -->
+      </class> <!-- DataDrivenFrameWorktest.DataDriverScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

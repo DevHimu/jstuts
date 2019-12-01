@@ -1,21 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15215" started-at="2019-11-24T19:33:21 IST" finished-at="2019-11-24T19:33:36 IST">
+  <suite name="Default suite" duration-ms="37744" started-at="2019-12-01T16:43:41 IST" finished-at="2019-12-01T16:44:19 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15215" started-at="2019-11-24T19:33:21 IST" finished-at="2019-11-24T19:33:36 IST">
-      <class name="com.tuts.webTableTest.TestingOFSameXpath">
-        <test-method status="PASS" signature="webTableTesting()[pri:0, instance:com.tuts.webTableTest.TestingOFSameXpath@2ac273d3]" name="webTableTesting" duration-ms="10101" started-at="2019-11-24T19:33:21 IST" finished-at="2019-11-24T19:33:31 IST">
+    <test name="Default test" duration-ms="37744" started-at="2019-12-01T16:43:41 IST" finished-at="2019-12-01T16:44:19 IST">
+      <class name="DataDrivenFrameWorktest.DataDriverScript">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="testLogin" duration-ms="7020" started-at="2019-12-01T16:43:41 IST" data-provider="userData" finished-at="2019-12-01T16:43:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- webTableTesting -->
-        <test-method status="PASS" signature="browserTrunket()[pri:0, instance:com.tuts.webTableTest.TestingOFSameXpath@2ac273d3]" name="browserTrunket" is-config="true" duration-ms="5081" started-at="2019-11-24T19:33:31 IST" finished-at="2019-11-24T19:33:36 IST">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="tearDown" is-config="true" duration-ms="597" started-at="2019-12-01T16:43:48 IST" finished-at="2019-12-01T16:43:49 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserTrunket -->
-      </class> <!-- com.tuts.webTableTest.TestingOFSameXpath -->
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="testLogin" duration-ms="8994" started-at="2019-12-01T16:43:49 IST" data-provider="userData" finished-at="2019-12-01T16:43:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="tearDown" is-config="true" duration-ms="615" started-at="2019-12-01T16:43:58 IST" finished-at="2019-12-01T16:43:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="testLogin" duration-ms="5634" started-at="2019-12-01T16:43:59 IST" data-provider="userData" finished-at="2019-12-01T16:44:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid credentials did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid credentials did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at DataDrivenFrameWorktest.DataDriverScript.testLogin(DataDriverScript.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="tearDown" is-config="true" duration-ms="592" started-at="2019-12-01T16:44:04 IST" finished-at="2019-12-01T16:44:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="testLogin" duration-ms="5753" started-at="2019-12-01T16:44:05 IST" data-provider="userData" finished-at="2019-12-01T16:44:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid credentials did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid credentials did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at DataDrivenFrameWorktest.DataDriverScript.testLogin(DataDriverScript.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="tearDown" is-config="true" duration-ms="978" started-at="2019-12-01T16:44:11 IST" finished-at="2019-12-01T16:44:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="testLogin" duration-ms="6608" started-at="2019-12-01T16:44:12 IST" data-provider="userData" finished-at="2019-12-01T16:44:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DataDrivenFrameWorktest.DataDriverScript@35d176f7]" name="tearDown" is-config="true" duration-ms="571" started-at="2019-12-01T16:44:18 IST" finished-at="2019-12-01T16:44:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DataDrivenFrameWorktest.DataDriverScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
