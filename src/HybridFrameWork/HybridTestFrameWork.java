@@ -18,7 +18,7 @@ public class HybridTestFrameWork {
 
 	public static void main(String[] args) throws Exception {
 		// Declaring the path of the Excel file with the name of the Excel file
-		String sPath = "C:\\Users\\Himandri\\eclipse-workspace\\SeleniumTutorialBatch2\\src\\KeyWordDrivenFrameWorkTest\\keyWordDrivenFrameworkTest.xlsx";
+		String sPath = "C:\\Users\\Himandri\\eclipse-workspace\\SeleniumTutorialBatch2\\src\\KeyWordDrivenFrameWork\\keywordDrivenFrameWorkTestCase.xlsx";
 
 		// Here we are passing the Excel path and SheetName to connect with the Excel
 		// file
